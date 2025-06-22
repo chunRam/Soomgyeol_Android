@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 로그인 화면을 구성하는 레이아웃 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 이메일 입력칸 -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 비밀번호 입력칸 -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 로그인 버튼 -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 로그인 아래쪽에 회원가입 유도 텍스트 -->
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정이 없으신가요? 회원가입"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:text="🧘‍♀️ 명상 통계"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 총 명상 횟수 -->
+    <TextView
+        android:id="@+id/txtTotalSessions"
+        android:text="총 명상 횟수: 0회"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 총 명상 시간 -->
+    <TextView
+        android:id="@+id/txtTotalTime"
+        android:text="총 명상 시간: 0분"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 감정 통계 요약 -->
+    <TextView
+        android:id="@+id/txtEmotionSummary"
+        android:text="감정 통계: -"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

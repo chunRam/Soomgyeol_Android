@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 회원가입 화면 UI -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 이름 입력 -->
+    <EditText
+        android:id="@+id/edtName"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 이메일 입력 -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 비밀번호 입력 -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 회원가입 버튼 -->
+    <Button
+        android:id="@+id/btnSignup"
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

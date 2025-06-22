@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/txtEmotionMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="감정 메시지"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/spinnerTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="명상 시간 선택"
+        android:inputType="none"
+        android:dropDownHeight="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtEmotionMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/spinnerMusic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="명상 음악 선택"
+        android:inputType="none"
+        android:dropDownHeight="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinnerTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStartMeditation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="명상 시작"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackToEmotion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="이전 화면으로"
+        android:textColor="#3F51B5"
+        android:backgroundTint="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/btnStartMeditation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

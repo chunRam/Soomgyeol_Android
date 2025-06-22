@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/journalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 헤더 텍스트 -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📝 오늘의 감정을 기록해보세요"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 명상 시간 정보 -->
+    <TextView
+        android:id="@+id/txtDurationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="명상 시간: 10분"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 일기 입력창 -->
+    <EditText
+        android:id="@+id/edtJournal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="어떤 마음이 드셨나요?\n명상 후의 감정을 자유롭게 남겨보세요."
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:gravity="top|start"
+        android:overScrollMode="always"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:textColor="#222222"
+        android:textColorHint="#999999"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 저장 버튼 -->
+    <Button
+        android:id="@+id/btnSaveJournal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기록 저장하기"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        android:drawableStart="@drawable/ic_check"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+</LinearLayout>
